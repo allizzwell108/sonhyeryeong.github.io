@@ -75,15 +75,16 @@
          height: 5px;
          background: #fff;
          transition: 0.5s;
-    
-     .mop>span:nth-child(1){top: 20px;}
-     .mop>span:nth-child(2){top: 40px;}
-     .mop>span:nth-child(3){top: 40px;}
-     .mop>span:nth-child(4){top: 60
-     .mopen:>span:nth-child(1){display:none;}
-     .mopen:>span:nth-child(2){transform: rotate(45deg);}
-     .mopen:>span:nth-child(3){transform: rotate(-45deg);}
-     .mopen:>span:nth-child(4){display:none;}
+        }
+     .mopen>span:nth-child(1){top: 20px;}
+     .mopen>span:nth-child(2){top: 40px;}
+     .mopen>span:nth-child(3){top: 40px;}
+     .mopen>span:nth-child(4){top: 60px;}
+
+     .mopen.oo>span:nth-child(1){display:none;}
+     .mopen.oo>span:nth-child(2){transform: rotate(45deg);}
+     .mopen.oo>span:nth-child(3){transform: rotate(-45deg);}
+     .mopen.oo>span:nth-child(4){display:none;}
     </style>
 </head>
 
@@ -109,9 +110,9 @@
     <span></span>
 </div>
 <script>
-    document.querySelector('.mopen') .addEventListener('click',function(){
+ document.querySelector('.mopen') .addEventListener('click',function(){
         console.log('찍네~~~');
-        //자기에게 oo 클랙스를 붙여줘
+        //자기에게 oo 클랙스를 붙여줘 document.querySelector('mopen').classList.toggle('oo')
         this.classList.toggle('oo')
     })
 </script>
