@@ -31,12 +31,12 @@
    font-weight: 500;
 }
 .main_visual{
-    position: relative;
+    position: relative;/*부모요소에 자연스럽게 연결하여 위치지정*/
     height: 600px;
-    background: url(../img/main_slider01.jpg) no-repeat center top/cover;
-}  
+    background: url(../img/main_slider01.jpg) no-repeat center top/cover;/*뒷배경되는 이미지 불러오기*/
+}
 .main_visual .slogan{
-    position: absolute;
+    position: absolute;/*원하는 위치를 지정해 배치*/
     top: 100px;
     right: 600px;
 }
@@ -52,8 +52,11 @@
     font-size: 60px;
     font-weight: 900;
     margin: 0 0 30px 0;
-    color: #00f;
-}
+    background: linear-gradient(blue,skyblue);
+    color:transparent;
+    -webkit-background-clip: text;
+}/*글자 그라데이션*/
+   
 
 .main_slider strong{
     display: block;
@@ -80,4 +83,193 @@
 
 .main_slider .slick-dots button{
     display: none;
+}
+
+.main_banner{
+    transform: translateY(-50%);
+}
+.main_banner .container{
+    height:  220px;
+    align-items: flex-end;
+}/*크기를 먼저 키우기*/
+
+.main_banner figure{
+    display: flex;
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    justify-content: center; /*내용물을 가운데로-마진:0 auto도 */
+    align-items: center;
+    height: 200px;
+    transition: 0.5s;
+    }
+
+.main_banner figure:hover{
+    height: 220px;
+}/*호버하면 되는 크기 정의 */
+
+
+/*flex는 */
+.main_banner figure:nth-child(1){
+    background: #e7948f;
+}
+.main_banner figure:nth-child(2){
+    background: #f3ca4f;
+}
+.main_banner figure:nth-child(3){
+    background: #337688;
+}
+.main_banner figure:nth-child(4){
+    background: #6fa376;
+}
+.main_banner figure a{
+    display: flex; /*a는 박스가 아니기 때문에 디스플레이:블록으로 박스를 만들어 줌*/
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+    font-size: 13px;
+}
+.main_banner figure:nth-child(1) a{
+    background: url(../img/icon_set_w.png) no-repeat 0 0; /*a부분만 불러오기 때문*/
+    transition: 0.5s;
+    }
+
+.main_banner figure:nth-child(1) :hover a{
+        background: url(../img/icon_set_w.png) no-repeat -300px 0;
+    }
+
+
+.main_banner figure:nth-child(2) a{
+    background: url(../img/icon_set_w.png) no-repeat -100px 0;
+}/*-100px왼쪽으로 a박스가 중심이기 때문에 a박스에 보이는 사진이 왼쪽으로 가서 두번째 그림이 보이는 것임*/
+.main_banner figure:nth-child(3) a{
+    background: url(../img/icon_set_w.png) no-repeat -200px 0;
+}
+.main_banner figure:nth-child(4) a{
+    background: url(../img/icon_set_w.png) no-repeat -300px 0;
+}
+.main_banner figure strong{
+   
+}
+.main_banner .customer{
+    position: relative; /*기준점0*/
+    flex: 2;
+    text-align: right;
+    background: #dddddd;
+    padding: 50px 30px 50px 0;
+  
+
+}
+.main_banner .customer a{
+    display: block;
+    margin: 0 0 15px 0;
+    font-size: 38px;
+    background:linear-gradient(blue,skyblue);
+    color:transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.main_banner .customer i{
+    position: absolute;
+    top: -29px;
+    right: 30px;
+    color: #fff;
+    background:#e7948f; 
+    font-size: 38px;
+    padding: 10px;
+    border-radius: 50%;/*동그랗게 만드는거*/
+}
+/*.main_link h2{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.main_link h2::after{
+    content: "";
+    display:inline-block; 
+    width: 80px;
+    height: 1px;
+    background: #f00;
+    vertical-align: middle;
+    margin: 0 10px;
+}*//*display:block으로 하면 글자를 밑으로 내림 인라인 블록은 텍스트 취급*/
+
+.main_link{
+    padding: 0 0 10px 0;
+    background: linear-gradient(to top, #f7f7f7 70%, transparent 30%);/*앞 색깔 숫자가 크면 경계선이 생긴다*/
+
+}
+.main_link .container{
+    gap: 30px;
+}
+.main_link li::before{
+    content: "\ea10";
+    font-family: xeicon !important;
+}
+.main_link figure{
+    position: relative; /*more의 기준점*/
+    flex: 1;
+    border-radius: 50px 0 0 0; /*박스를 구부린거임*/
+    overflow: hidden; /*박스 바깥으로 나온 그림을 감춰주는 것*/
+}
+.main_link figure a {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(243, 202, 79, 0.5);
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    text-transform: uppercase;
+    /*opacity: 0.5; 투명하게만듬-자식들도*/
+}
+.main_link figure a:hover{
+    background:rgba(243, 202, 79, 1);
+    border-radius: 5px;
+}
+
+.main_link img{
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+.main_link h3{
+    font-size: 23px; /*노트상스폰트는 홀수 픽셀이 좋음*/
+    margin: 0 0 30px 0;
+}
+
+.main_link h3::after{ /*디자인요소(컨텐츠)이므로 내용으로 안 읽힘-드래그해도 안 긁힘*/
+    content: ""; 
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #fd7e14;
+    margin: 15px 0;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer ul{
+    margin: 10px 0;
+}
+.footer ul>li {
+    display: inline-block;
+}
+.footer ul>li~li::before{ /**/
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #333;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+.footer address{
+    font-style: normal;
 }
