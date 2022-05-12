@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>혜령's 홈</title>
+    <title>혼자해보깅</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
-     <link rel="stylesheet" href="./css/main (자습).css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main (자습).css">
     <!-- link 순서 잘 지키기 리셋이 가장 위 -->
 </head>
 
@@ -71,62 +72,197 @@
                             <h3>01.JEWELLERY COLLECTION EVENT</h3>
                             <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. </p>
                             <a href="">more</a>
-                        </div>  
+                        </div>
                     </figure>
                     <figure class="itm02">
                         <div class="container">
                             <h3>02.JEWELLERY COLLECTION EVENT</h3>
                             <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. </p>
                             <a href="">more more more more</a>
-                        </div>  
+                        </div>
                     </figure>
                     <figure class="itm03">
                         <div class="container">
                             <h3>03.JEWELLERY COLLECTION EVENT</h3>
                             <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. </p>
                             <a href="">아무튼여러가지글자</a>
-                        </div>  
+                        </div>
                     </figure>
                 </div>
             </section>
-<!-- 자습부분 -->
+            <!-- 자습부분 -->
             <section class="content">
                 <h2>JEWELLERY COLLECTION</h2>
                 <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다. </p>
                 <div class="container">
                     <figure>
                         <div class="corong">
-                        <img src="./img/lesedilarona01.jpg" alt="향수1">
+                            <img src="./img/lesedilarona01.jpg" alt="향수1">
                         </div>
                         <strong>스톤 그리고 색상들을 멋진조합</strong>
                         <a href="#!">구매하기</a>
                     </figure>
                     <figure>
                         <div class="corong">
-                        <img src="./img/lesedilarona02.jpg" alt="향수2">
+                            <img src="./img/lesedilarona02.jpg" alt="향수2">
                         </div>
                         <strong>스톤 그리고 색상들을 멋진조합</strong>
-                         <a href="#!">구매하기</a> 
+                        <a href="#!">구매하기</a>
                     </figure>
                     <figure>
                         <div class="corong">
-                        <img src="./img/lesedilarona03.jpg" alt="향수3">
-                        </div>    
+                            <img src="./img/lesedilarona03.jpg" alt="향수3">
+                        </div>
                         <strong>스톤 그리고 색상들을 멋진조합</strong>
-                        <a href="#!">구매하기</a>     
-                    </figure>                          
+                        <a href="#!">구매하기</a>
+                    </figure>
                 </div>
             </section>
+            <section class="fixed_bg">
+                <h2>쥬얼리어쩌구</h2>
+                <p>모던하면서 어쩌구</p>
+                <span>more</span><i class="xi-arrow-right"></i>
+            </section>
+            <section class="movie">
+                <div class="container">
+                    <figure>
+                        <video src="./img/movie.mp4" muted autoplay loop></video>
+                    </figure>
+                    <div class="dec">
+                        <h2>쥬얼리어쩌구</h2>
+                        <p>모던하면서 어쩌구</p>
+                        <i class="xi-play"></i>
+                        <i class="xi-pause"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="utube">
+                <h2>론리 하츠 클럽, 빈지노 (Beenzino) - Speech 04. Relation (Spread The Message앨범 中)</h2>
+                <p>난 늘 혼자 있고 싶다가도
+                    외로움에게 질때가 진짜 많아
+                    하루 반나절을 혼자인 탓에 굶다 든 생각,
+                    이건 좀 아닌가? 막상, 내 친구들의 소식을 물어보기 좀 그런게
+                    나만 너무 업뎃이 늦어</p>
+                <i class="xi-play"></i>
+                <i class="xi-pause"></i>
+                <div class="player" id="myMovie"></div>
+            </section>
+            <section class="product_list">
+                <h2>론리 하츠 클럽, 빈지노 (Beenzino) - Speech 04. Relation (Spread The Message앨범 中)</h2>
+                <p>난 늘 혼자 있고 싶다가도
+                    외로움에게 질때가 진짜 많아
+                    하루 반나절을 혼자인 탓에 굶다 든 생각,
+                    이건 좀 아닌가? 막상, 내 친구들의 소식을 물어보기 좀 그런게
+                    나만 너무 업뎃이 늦어</p>
+
+                <div class="product_slider">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona02.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona03.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona04.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona05.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/lesedilarona06.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY</strong>
+                    </figure>
+                </div>
+                <i class="xi-arrow-left s_left"></i>
+                <i class="xi-arrow-right s_right"></i>
+            </section>
+            <section class="tab">
+                <div class="container">
+                    <div class="tab_wrap">
+                        <ul class="tab_link">
+                            <li class="on">memu01</li>
+                            <li>memu02</li>
+                            <li>memu03</li>
+                        </ul>
+                        <ul class="tab_content">
+                            <li class="on">
+                                <dl>
+                                    <dd>
+                                        <strong>
+                                            모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉 모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프
+                                            하우스의 시그너쳐 컬렉</strong>
+                                        <span>2022.12.24</span>
+                                    </dd>
+                                    <dd>
+                                        <strong>
+                                            모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉 모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프
+                                            하우스의 시그너쳐 컬렉</strong>
+                                        <span>2022.12.24</span>
+                                    </dd>
+                                    <dd>
+                                        <strong>
+                                            모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉 모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프
+                                            하우스의 시그너쳐 컬렉</strong>
+                                        <span>2022.12.24</span>
+                                    </dd>
+                                    <dd>
+                                        <strong>
+                                            모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉 모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프
+                                            하우스의 시그너쳐 컬렉</strong>
+                                        <span>2022.12.24</span>
+                                    </dd>
+                                    <dd>
+                                        <strong>
+                                            모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉 모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프
+                                            하우스의 시그너쳐 컬렉</strong>
+                                        <span>2022.12.24</span>
+                                    </dd>
+
+                                </dl>
+                            </li>
+                            <li>02</li>
+                            <li>03</li>
+                        </ul>
+                    </div>
+                    <figure>
+                        <img src="./img/mainvisual01.jpg" alt="">
+                    </figure>
+                </div>
+            </section>
+
         </main>
         <footer class="footer">
 
         </footer>
     </div>
-</div>
+    </div>
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/main.js"></script>
+
+  
 </body>
 
 </html>
