@@ -1,0 +1,20 @@
+//사용자의 입력 n,m에 대해
+// n^m(n의 m 제곱)을 출력하기 
+import java.util.Scanner;
+public class Test2{
+	public static void main(String[] args){
+		Scanner scan= new Scanner(System.in);
+		System.out.println("정수 두 가지를 차례대로 입력하시오: ");
+		int n = scan.nextInt();
+		int m = scan.nextInt();
+		
+		//3,4 > 3*3*3*3
+		int number =0;
+		for(int i=0;i<m;i++ ){
+			number *= 3;
+		}
+		System.out.println(number);
+		
+		
+	}
+}

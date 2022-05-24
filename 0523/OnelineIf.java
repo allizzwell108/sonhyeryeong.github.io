@@ -1,0 +1,35 @@
+public class OnelineIf {
+	public static void main(String[] args) {
+		boolean con = true;
+		// ?삼항연산자 문법:(조건식-불연값)? "조건식이 참일때" : "조건식이 거짓일 때"   
+		//String result =(con)? "참" : "거짓";
+		
+		//(con)? System.out.println("참 출력") : System.out.println("거짓일 때");
+		
+		int result =(con)? 100: -100;
+		
+		System.out.println(result);
+		
+		System.out.println("프로그램 종료");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		if(con) //중괄호 생략 :한 문장일 경우에만!
+			System.out.println("참일 경우 실행할 문장");
+		else
+			System.out.println("거짓일 경우 실행할 문장1");
+			System.out.println("거짓일 경우 실행할 문장2");// 중괄호가 없을 경우 else절이랑 상관 없는 문장이 됨.
+		
+		
+		System.out.println("프로그램 종료");
+		*/
+	}
+}

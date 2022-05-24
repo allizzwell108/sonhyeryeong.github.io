@@ -1,0 +1,51 @@
+//음료캔을 구입하고자 합니다. 
+//돈입력
+//반복하여 입력받아
+//1번 콜라 1500원 
+//2번 사이다 1300원
+//3번 계산
+//총 몇개의 캔을 구입하고, 거스름돈은 얼마인지 출력하시오. 
+import java.util.Scanner;
+public class Test3{
+	public static void main(String[] args){
+	Scanner scan= new Scanner(System.in);
+	//돈 입력받기
+	System.out.println("돈을 입력하시오");
+	int money = scan.nextInt();
+	
+	//1번 혹은 2번을 입력 받는것을 반복???
+	
+	// 1번을 n번 2번을 nn번 누름> 콜라*1500 + 사이다*1300 <= money 여야함. 
+	//반복이 얼만큼 되야 하는지??? 돈만큼! 돈만큼을 어캐 암??
+	   //콜라만으로 전부 돈이 소진될 만큼 갯수 <i <사이다로 돈 소진 될 만큼의 갯수
+	   //i는 < max사이다 갯수 -> money/1300
+	
+	int coke=0;
+	int j=0;//콜라 몇개
+	int sider=0;
+	int k=0;//사이다 몇개
+	
+	
+	System.out.println("콜라면 1번 사이다면 2번을 뽑고 싶은 만큼 반복하여 입력하세요");
+	int i=1;//몇 번 반복할 지 변수
+	int num=0;//사용자가 입력하는 번호. (1번 2번 밖에 없음)
+		while(i<money/1300){
+			num= scan.nextInt();
+			if(num==1){
+				j++;
+				coke=j*1500;
+			}else{
+				k++;
+				sider=k*1300;
+			}
+			i++;
+		}
+			
+		
+	//확인하기
+	System.out.printf("콜라의 총  갯수는 %d, 총 금액은%d\n",j,coke);
+	System.out.printf("사이다의 총  갯수는 %d, 총 금액은%d\n",k,sider);
+	System.out.printf("총  갯수는 %d, 거스름돈은 %d",j+k,money-(coke+sider));
+	
+	}
+}
