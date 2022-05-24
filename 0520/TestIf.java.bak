@@ -1,0 +1,13 @@
+//제어문-제어대상?프로그램의 흐름
+public class TestIf{
+	public static void main(String[] args){
+		/*if( 조건식(논리값) ){ 괄호가 참일 경우, 문장1 문장2 실행함 }
+				{괄호가 거짓일 경우, 중괄호를 건너뛰고 실행됨}*/
+				
+		boolean condition=true;
+		if (condition){
+			System.out.println("조건문 블록 안입니다.");
+		} 
+		System.out.println("프로그램 종료");
+	}
+}

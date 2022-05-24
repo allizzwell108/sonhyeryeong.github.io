@@ -1,0 +1,36 @@
+//사용자의 학점
+//점수를 입력받아
+//90점 이상 A
+//80이상90미만 B
+//70이상 80미만 C
+//60이상 70미만 D
+//60점 미만 F
+
+import java.util.Scanner;
+public class TestScore{
+	public static void main(String[] args){
+		Scanner scan=new Scanner(System.in);
+		System.out.println("점수를 입력하세요: ");
+		int score = scan.nextInt();
+		
+	
+		String it="";
+		
+		if (score >=90){
+			it="A";
+		}else if(score>=80){
+			it="B";
+		}else if(score>=70){
+			it="C";
+		}else if(score>=60){
+			it="D";
+		}else {
+			it="F";
+		}
+		
+		System.out.println("당신의 학점은" + it + " 입니다.");
+		
+		
+		
+	}
+}
