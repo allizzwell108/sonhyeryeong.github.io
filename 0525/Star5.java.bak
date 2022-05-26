@@ -1,0 +1,65 @@
+/*
+ 5.
+ *********
+  *******
+   *****
+    ***
+	 *
+*/
+public class Star5{
+	public static void main(String[] args){
+		
+		
+		for(int i=1; i<=5;i++){
+			
+			for(int j=1;j<i;j++){//공백반복-증가
+				 System.out.print(".");
+			}
+			//i가 2일 때 
+			// for(int k=1;k<=i;k++){//별 반복-증가
+			// //감소가 -2씩 일어남.
+				// System.out.print("*");
+				// if(k==i){
+					// for(int x=8; x<k+8;x--){//별은 기존 별갯수-1 만큼 증가한다.
+						// System.out.print("*");
+					// }
+				// }
+				
+				
+			// }
+			System.out.println();//줄바꿈
+		}	
+				
+	}
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
+		for(int k=1; k<=5;k++){//줄반복
+			// int x=0;
+			for(int i=4;i>=k;i--){///공백 되는거-갈수록 감소하는거 
+				System.out.print(" ");
+				
+			}
+			
+			for(int j=1; j<=k;j++){//별 나오는거 - 갈수록 증가하는거 
+				System.out.print("*");
+				//원래 별에서 2개씩 더 증가해야한다. 
+				if(j==k&& k!=1){//줄이 1일때 뺴고, 줄이랑 기존 별 갯수랑 같을 때 
+					for(int x=0; x<j-1;x++){//별은 기존 별갯수-1 만큼 증가한다.
+						System.out.print("*");
+					}
+				}
+			}
+			System.out.println();
+		*/
+
+	
